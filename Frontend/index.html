@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiver Camera Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script> 
+
+</head>
+<body>
+    <div class="header">
+        <h1>Archiver Camera Dashboard</h1>
+
+    </div>
+
+    <div class="regions">
+    <button class="region" onclick="navigateToRegion('region1.html')">APAC</button>
+    <button class="region" onclick="navigateToRegion('region1.html')">EMEA</button>
+    <button class="region" onclick="navigateToRegion('region1.html')">LACA</button>
+    <button class="region" onclick="navigateToRegion('region1.html')">NAMER</button>
+    </div>
+
+    <div class="status summary">
+        <div class="summary-item">
+        <button class="status-button" onclick ="showOnlineControllers()">Total Online Controllers::${totalOnline}</button>
+        <button class="status-button offline" onclick ="showOfflineControllers()">Total Offline Controllers:${totalOffline}</button>
+    </div>
+
+    <div class="status summary">
+        <div class="summary-item">
+        <button class="status-button" onclick ="showOnlineArchivers()">Total Online Archivers::${totalOnline}</button>
+        <button class="status-button offline" onclick ="showOfflineArchivers()">Total Offline Archivers:${totalOffline}</button>
+        </div>
+
+        <div class="status summary">
+            <div class="summary-item">
+        <button class="status-button" onclick ="showOnlineCameras()">Total Online Cameras::${totalOnline}</button>
+        <button class="status-button offline" onclick ="showOfflineCameras()">Total Offline Cameras:${totalOffline}</button>
+    </div>
+
+    <!--Include Footer-->
+    <footer class="footer">
+        <img src="images/FooterLogo.png" alt="Company Logo" class="footer-logo">
+        <p>&copy;2024 VisionWatch | Power by <strong>Western Union Servcies India Pvt Ltd.</strong></p>
+        <p>Contact :
+        <a href="mailto:gsoc-globalsecurityoperationcenter.sharedmailbox@westernunion.com">gsoc-globalsecurityoperationcenter.sharedmailbox@westernunion.com</a> |
+        <a href="tel:+91 20 67632394">+91 2067632394 </a>
+        </p>
+    </footer>
+
+</body>
+</html>
